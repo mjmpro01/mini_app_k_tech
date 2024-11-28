@@ -542,6 +542,7 @@ export interface ApiServiceService extends Struct.CollectionTypeSchema {
     name: Schema.Attribute.String;
     price_range: Schema.Attribute.String;
     publishedAt: Schema.Attribute.DateTime;
+    thumbnail: Schema.Attribute.Media<'images' | 'files' | 'videos' | 'audios'>;
     updatedAt: Schema.Attribute.DateTime;
     updatedBy: Schema.Attribute.Relation<'oneToOne', 'admin::user'> &
       Schema.Attribute.Private;
