@@ -451,7 +451,7 @@ export interface ApiFieldField extends Struct.CollectionTypeSchema {
   };
 }
 
-export interface ApiProjectProject extends Struct.SingleTypeSchema {
+export interface ApiProjectProject extends Struct.CollectionTypeSchema {
   collectionName: 'projects';
   info: {
     description: '';
