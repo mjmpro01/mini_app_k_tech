@@ -454,6 +454,7 @@ export interface ApiFieldField extends Struct.CollectionTypeSchema {
 export interface ApiProjectProject extends Struct.SingleTypeSchema {
   collectionName: 'projects';
   info: {
+    description: '';
     displayName: 'project';
     pluralName: 'projects';
     singularName: 'project';
@@ -478,6 +479,7 @@ export interface ApiProjectProject extends Struct.SingleTypeSchema {
     updatedAt: Schema.Attribute.DateTime;
     updatedBy: Schema.Attribute.Relation<'oneToOne', 'admin::user'> &
       Schema.Attribute.Private;
+    url: Schema.Attribute.String;
   };
 }
 
