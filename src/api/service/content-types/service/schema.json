@@ -36,6 +36,17 @@
       "type": "blocks"
     },
     "thumbnail": {
+      "type": "media",
+      "multiple": false,
+      "required": false,
+      "allowedTypes": [
+        "images",
+        "files",
+        "videos",
+        "audios"
+      ]
+    },
+    "detail_banner": {
       "allowedTypes": [
         "images",
         "files",
